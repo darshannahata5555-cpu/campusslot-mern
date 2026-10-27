@@ -6,7 +6,9 @@ Source: https://github.com/darshannahata5555-cpu/campusslot-mern
 
 Live application: **https://campusslot-ljo6.onrender.com**
 
-Validation on 27 October 2026: production build and all three automated test groups passed, including real MongoDB replica-set integration. The Render deployment uses MongoDB Atlas. Live smoke tests passed for health, registration, secure sessions, reservation persistence, cancellation, history, and logout. The public desktop catalog, search, and category filtering were verified in Edge. Demo video and final form submission remain pending.
+**Demo video:** [Watch or download the CampusSlot demo (MP4)](https://github.com/darshannahata5555-cpu/campusslot-mern/releases/download/demo-video/campusslot-demo.mp4) · [Video release page](https://github.com/darshannahata5555-cpu/campusslot-mern/releases/tag/demo-video)
+
+Validation on 27 October 2026: production build and all three automated test groups passed, including real MongoDB replica-set integration. The Render deployment uses MongoDB Atlas. Live smoke tests passed for health, registration, secure sessions, reservation persistence, cancellation, history, and logout. The public desktop catalog, search, and category filtering were verified in Edge. Final form submission remains pending.
 
 The free Render service sleeps when inactive; the first visit may take about a minute to wake. Register a student account in the app. Local demo credentials are not enabled on the hosted deployment. Provision a trusted coordinator using the staff creation instructions below before demonstrating staff workflows.
 
