@@ -4,7 +4,11 @@
 
 Source: https://github.com/darshannahata5555-cpu/campusslot-mern
 
-Validation on 27 October 2026: production build and all three automated test groups passed, including real MongoDB replica-set integration. Browser visual verification could not be completed because the browser origin approval was denied. Public app deployment and demo video are still pending.
+Live application: **https://campusslot-ljo6.onrender.com**
+
+Validation on 27 October 2026: production build and all three automated test groups passed, including real MongoDB replica-set integration. The Render deployment uses MongoDB Atlas. Live smoke tests passed for health, registration, secure sessions, reservation persistence, cancellation, history, and logout. The public desktop catalog, search, and category filtering were verified in Edge. Demo video and final form submission remain pending.
+
+The free Render service sleeps when inactive; the first visit may take about a minute to wake. Register a student account in the app. Local demo credentials are not enabled on the hosted deployment. Provision a trusted coordinator using the staff creation instructions below before demonstrating staff workflows.
 
 ## Problem and target users
 

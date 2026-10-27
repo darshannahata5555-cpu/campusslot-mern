@@ -7,7 +7,7 @@
 - **Tech stack:** MongoDB, Express.js, React, Node.js; Vite; MongoDB transaction-based integration tests.
 - **Major features:** searchable equipment catalog; conflict-safe reservations; booking limits; student/staff authorization; approval and rejection; checkout and return; overdue tracking; reservation history.
 - **GitHub repository:** https://github.com/darshannahata5555-cpu/campusslot-mern
-- **Deployed application:** TO BE DEPLOYED
+- **Deployed application:** https://campusslot-ljo6.onrender.com
 - **Demo video:** TO BE RECORDED AND UPLOADED
 
 Official form: https://forms.gle/sBy4sfqyiRG2Zpom9
