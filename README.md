@@ -115,6 +115,8 @@ Integration tests start a real temporary single-node MongoDB replica set through
 
 This repository contains `render.yaml` and a Dockerfile. A deployment has **not** been created merely by having these files.
 
+[Deploy this repository to Render](https://render.com/deploy?repo=https://github.com/darshannahata5555-cpu/campusslot-mern). The blueprint selects a free web service and asks for the `MONGODB_URI` secret. Use an Atlas replica-set connection; do not use the local development URI on Render.
+
 1. Push this source to your own GitHub repository.
 2. Create an Atlas database and configure network access for the host.
 3. On a Node-compatible host (the provided blueprint targets Render), create a service from this repository. Build: `npm ci && npm run build`. Start: `npm start`. Health check: `/api/health`.
