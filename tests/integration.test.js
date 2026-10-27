@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {MongoMemoryReplSet} from 'mongodb-memory-server';
 import {connectDatabase,passwordHash} from '../server/db.js';
 import {createApp} from '../server/app.js';
-test('real MongoDB: identity, concurrent booking conflicts, quota, ownership and checkout lifecycle', {timeout:240000}, async()=>{
+test('real MongoDB: identity, concurrent booking conflicts, quota, ownership and checkout lifecycle', {timeout:900000}, async()=>{
  const repl=await MongoMemoryReplSet.create({replSet:{count:1},binary:{version:'8.0.16'}});
  let client,server;
  try{

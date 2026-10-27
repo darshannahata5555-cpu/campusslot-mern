@@ -6,7 +6,7 @@
 - **Solution:** A role-based reservation platform that holds time slots, validates conflicts and limits, supports coordinator approval and handover, and tracks returns with an audit trail.
 - **Tech stack:** MongoDB, Express.js, React, Node.js; Vite; MongoDB transaction-based integration tests.
 - **Major features:** searchable equipment catalog; conflict-safe reservations; booking limits; student/staff authorization; approval and rejection; checkout and return; overdue tracking; reservation history.
-- **GitHub repository:** TO BE PUBLISHED
+- **GitHub repository:** https://github.com/darshannahata5555-cpu/campusslot-mern
 - **Deployed application:** TO BE DEPLOYED
 - **Demo video:** TO BE RECORDED AND UPLOADED
 
@@ -24,7 +24,7 @@ Deadline: **27 October 2026, 11:59 PM IST**. Having local files does not count a
 
 ## Final checks
 
-- [ ] Run `npm test` and `npm run build` successfully.
+- [x] Run `npm test` and `npm run build` successfully (27 October 2026).
 - [ ] Verify the deployed major workflows as student and staff.
 - [ ] Confirm data survives a restart.
 - [ ] Confirm no `.env` or credentials are tracked by Git.

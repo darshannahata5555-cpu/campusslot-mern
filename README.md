@@ -2,6 +2,10 @@
 
 **Campus equipment, shared fairly.** An original MERN application by **Darshan** for reserving and managing shared campus equipment.
 
+Source: https://github.com/darshannahata5555-cpu/campusslot-mern
+
+Validation on 27 October 2026: production build and all three automated test groups passed, including real MongoDB replica-set integration. Browser visual verification could not be completed because the browser origin approval was denied. Public app deployment and demo video are still pending.
+
 ## Problem and target users
 
 Students need cameras, microphones, projectors, and prototyping equipment for short projects. Informal messages and spreadsheets make availability uncertain, cause overlapping promises, and leave equipment returns untracked. CampusSlot serves student borrowers and equipment coordinators.
@@ -39,6 +43,12 @@ Express serves the compiled React app and API from one origin. MongoDB stores us
 - **Deployment:** one Node service and Atlas keeps the frontend/API same-origin and avoids CORS/token-storage complexity.
 
 ## Local setup
+
+### Quick local demonstration
+
+With Node.js 24+, run `npm ci`, `npm run build`, then `npm run demo`. This downloads and starts a real loopback-only MongoDB replica set (no Docker or Atlas required), seeds demonstration users, and serves http://localhost:3000. Database files are retained in ignored `data/local-demo` between launches. First startup needs internet for the MongoDB binary. This convenience mode uses development dependencies and public demo passwords; use the Atlas configuration below for deployment.
+
+Student: `student@campusslot.demo`; staff: `staff@campusslot.demo`; password: `CampusDemo123!`.
 
 Requires Node.js **24+**, npm, and either MongoDB Atlas or a local MongoDB replica set. A standalone `mongod` will not support booking transactions.
 
