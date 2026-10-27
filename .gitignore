@@ -4,3 +4,6 @@ data/
 .env
 *.log
 .cache/
+docs/atlas-deployment-blocker.png
+docs/render-secret-setup.png
+docs/deployment-*.png

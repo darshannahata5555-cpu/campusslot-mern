@@ -119,7 +119,7 @@ This repository contains `render.yaml` and a Dockerfile. A deployment has **not*
 
 1. Push this source to your own GitHub repository.
 2. Create an Atlas database and configure network access for the host.
-3. On a Node-compatible host (the provided blueprint targets Render), create a service from this repository. Build: `npm ci && npm run build`. Start: `npm start`. Health check: `/api/health`.
+3. On a Node-compatible host (the provided blueprint targets Render), create a service from this repository. Build: `MONGOMS_DISABLE_POSTINSTALL=1 npm ci --include=dev && npm run build`. Start: `npm start`. Health check: `/api/health`. Explicitly including development dependencies makes Vite available even with `NODE_ENV=production`; disabling the test database's install-time binary download avoids downloading an unused MongoDB server during deployment.
 4. Set `MONGODB_URI` as a secret and `NODE_ENV=production`. Use HTTPS. The app expects one trusted reverse proxy; adjust Express `trust proxy` for a different topology.
 5. Create a staff account using the script with the same database connection, then clear `STAFF_PASSWORD`.
 6. Open the deployed URL, register a student, create/approve a request, check it out during its window, and return it. Test persistence by restarting the service.

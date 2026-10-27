@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     branch: master
-    buildCommand: npm ci && npm run build
+    buildCommand: MONGOMS_DISABLE_POSTINSTALL=1 npm ci --include=dev && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
     envVars:
